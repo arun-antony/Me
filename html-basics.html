@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta description="This description of the webpage will be extracted by Search engines and shown in the search results">
   <title>Basic HTML tags - This appears in the title of the browser window</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -16,7 +17,9 @@
   <h2>Timeline:</h2>
   <ol>
     <li>HTML Beginner Module started and finished on 19 October 2021</li>
-    <li>HTML Intermediate Module started on 20 October 2021 </li>
+    <li>HTML Intermediate Module started and finished on 20 October 2021 </li>
+    <li>Published 1st barebone html website at github pages on 20 October 2021</li>
+    <li>CSS Beginer Module started on 20 October 2021</li>
   </ol>
 
   <h2>References:</h2>
@@ -39,8 +42,9 @@
       <ul>
         <li>emmet - code completion</li>
         <li>beautify - code intendation</li>
+        <li>Pigment - shows color preview inline</li>
       </ul>
-      <li>Other tools to be added here</li>
+      <li>Color pallettes - <a href="https://colorhunt.co/">Color Hunt</a></li>
     </ol>
     <br>
     <li>Shortcuts in Mac</li>
@@ -52,6 +56,10 @@
 
   <hr size="3" noshade>
   <h2>Summary of what I have learned so far:</h2>
+  <hr size="3" noshade>
+
+  <h1>Hyper Text Markup Language (HTML)</h1>
+
 
   <h3>Heading Tags</h3>
 
@@ -83,6 +91,33 @@
   <br>
 
   <hr size="3" noshade>
+  <h3>Tables</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Sl. No</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Marcus</td>
+        <td>Rashford</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bruno</td>
+        <td>Fernandez</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <br>
+  <hr size="3" noshade>
 
   <h3>Forms & Input types</h3>
   <form action="index.html" method="post">
@@ -104,11 +139,18 @@
     <label for="">Range Selector</label>
     <input type="range" name="" value=""><br>
 
-    <hr size="3" noshade>
     <br>
 
   </form>
   <br>
+  <hr size="3" noshade>
+  <h1>Cascaded Style Sheets (CSS)</h1>
+
+  <h3>Internal CSS</h3>
+  <p>We could add css styles internally to a page element using the tag style. We apply styles to an element in the head section so that the style will be applied to the element automatically when used in that page.</p>
+
+  <h3>External CSS</h3>
+
 </body>
 <footer>
   <a href="index.html">Back to Home</a> | <a href="html-basics.html">Top</a>
