@@ -19,7 +19,7 @@
     <li>HTML Beginner Module started and finished on 19 October 2021</li>
     <li>HTML Intermediate Module started and finished on 20 October 2021 </li>
     <li>Published 1st barebone html website at github pages on 20 October 2021</li>
-    <li>CSS Beginer Module started on 20 October 2021</li>
+    <li>CSS Beginer Module started and finished on 20 October 2021</li>
   </ol>
 
   <h2>References:</h2>
@@ -29,6 +29,8 @@
       <li> <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Networks</a></li>
       <li> <a href="https://devdocs.io/">Dev Docs</a></li>
       <li> <a href="https://www.w3schools.com/html/">W3 Schools Html</a></li>
+      <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS styling references at MDN</a></li>
+
     </ol>
     <br>
     <li>Tryouts</li>
@@ -45,6 +47,7 @@
         <li>Pigment - shows color preview inline</li>
       </ul>
       <li>Color pallettes - <a href="https://colorhunt.co/">Color Hunt</a></li>
+      <li> <a href="https://emojipedia.com">Emojipedia: Get emoji icons here</a></li>
     </ol>
     <br>
     <li>Shortcuts in Mac</li>
@@ -147,9 +150,22 @@
   <h1>Cascaded Style Sheets (CSS)</h1>
 
   <h3>Internal CSS</h3>
-  <p>We could add css styles internally to a page element using the tag style. We apply styles to an element in the head section so that the style will be applied to the element automatically when used in that page.</p>
+  <p>We could add css styles internally to a page element using the tag style.
+    We apply styles to an element in the head section so that the style will
+    be applied to the element automatically when used in that page.</p>
 
   <h3>External CSS</h3>
+  <p>
+    We should place the styling of elements in a separate stylesheet and link them to the pages so that the
+    whole website could be styles consistently. If we want to style any pages or element we could do that too.
+    The styles specfied at element will have higher precedence over the page level or global level.
+
+  <ul>
+    <li>Tag Selectors -> Styles the elemets all over</li>
+    <li>Class Selectors -> Define classes with styles and apply the classes to elements. Class selectors can be cascaded. Defined using "." operator. A page can have any number of elemets with the same class. Syntax: .classname { properties }</li>
+    <li>ID selectors -> Define ID with styles and apply to the element with that ID. A page can have only one element with the ID. ID cannot be cascaded. Defined using "#" operator. Syntax: #IDname { properties }</li>
+  </ul>
+  </p>
 
 </body>
 <footer>
