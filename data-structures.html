@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta description="This description of the webpage will be extracted by Search engines and shown in the search results">
+  <title>Basic HTML tags - This appears in the title of the browser window</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1>Data Structures Learnings</h1>
+  <hr size="3" noshade>
+
+  <p>Ref: Data Structures course by Mohd Bari : Udemy</p>
+
+  <h2>Timeline:</h2>
+  <ol>
+    <li>Learning stared on 7 August 2023 with basics or intro to DS</li>
+  
+  </ol>
+
+  <h2>Main points</h2>
+  <ul>
+    <li>Intro to DS</li>
+    <ol>
+      <li> What is DS? It can be defined as arrangement of data in memory so that a program could execute the code on some data most efficiently.
+        A program needs data for it to work. So without DS, a program cannot exist. 
+      </li>
+      <li>
+        Memory is allocated to a program for its execution. When a program is started, it is allocated 3 sections. Code section, stack and heap.
+      </li>
+      <li>
+        Code Section: Program executable or machine level code is brought to code section of RAM when a program is started.
+      </li>
+      <li>
+        Stack: Static allocated memory. For each function that is started are allocated memory in stack - called as Stackframe or Activation record. So the memory known at
+        compile time is allocated here. This area can be directly accessed by the code. Primary variables, pointers etc are allocated here. References to Dynamicaly allocated memory locations
+        and resources are present here.
+      </li>
+      <li>
+        Heap: Dynamically allocated memory: Arrays, Linked list etc are allocated and deallocated on demand.
+      </li>
+      <li>
+        Monolithic programming: All code written in a single function. Not reusable and inneficient
+      </li>
+      <li>
+        Procedural or Modular programming: Split into multiple functions, classes - modular, reusable, maintainable
+      </li>
+      <li>
+        Interesting Fact in C++: Code that uses references become inline - no separate memory is allocated in stack - it becomes part of code section.
+      </li>
+      <li>
+        Call by value: Copies of variable are passed. <br/>
+        Call by reference: References are passed. So the function works on the same copy of variables. Such fns become inline. No separate activation records allocated. <br/>
+        Call by address: Pointers are passed. A pointer memory is allocated for the function in its Activation record. <br/>
+      </li>
+
+      <li>
+        Physical vs Logical Data Structures: <br/>
+
+        Physical DS: They define how the memory is organized: Arrays (if size id known), Linked List (if size is not known upfront). <br/>
+        Logical DS: They are DS derived or created using physical DS. 
+        Eg: <br/> 
+        1. Stack - LIFO , Queue - FIFO  - Linear DS <br/>
+        2. Graph, Tree - Non Linear DS <br/>
+        3. HashTable - Linear/Non-Linear/Tabular DS <br/>
+
+        <br/>
+        ADT - Abstract Datatypes: Definition of data, Operations on Data : Impl details are abstract eg: Class
+        
+
+      </li>
+      
+
+    </ol>
+    <br>
+    <li><b>Complexities</b></li>
+    <ol>
+      <li>Time Complexity: Representation of time required for exectution of a piece of code. It is represented as <i>(n<sup>deg</sup>)</sup></i></li>
+      <li>Space Complexity: Representaton of space or memory used for execution of a piece of code.</li>
+      <li><a href="./ds/complexity.html">More....</a> </li>
+    </ol>
+    <br>
+    <li>Recursion</li>
+    <ol>
+      <li>
+        <pre>
+          <code>
+            
+             class User{
+
+               String userName;
+
+               User(){
+
+               }
+             }
+            
+          </code>
+        </pre>
+      </li>
+    </ol>
+    
+</body>
+<footer>
+  <a href="index.html">Back to Home</a> | <a href="html-basics.html">Top</a>
+</footer>
+
+</html>

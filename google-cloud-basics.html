@@ -36,6 +36,60 @@
 
   <br/>
 
+  <h3>Compute Engine Fundamentals</h3>
+  <ol>
+    <li>In on prem systems, applications are deployed to physical servers</li>
+    <li>In cloud, clients can rent virtual servers on GCP - Virtual Machines - </li>
+    <li>Google Compute Engine - Provision & Manage Virtual machines</li>
+  </ol>
+
+  <h5>Compute Engine Features</h5>
+  <ol>
+    <li>Create and manage lifecycle of VM instances</li>
+    <li>Load Balancing and Auto Scaling for multiple VM instances</li>
+    <li>Attach storage & network storage to your VMs</li>
+    <li>Manage n/w connectivity and configuration of VMs</li>
+    <li>SSH to connect to the VM instances</li>
+  </ol>
+
+  <br/>
+
+  <h5>Compute Engine Machine Family</h5>
+  <ol>
+    <li>Create and manage lifecycle of VM instances</li>
+    <li>Load Balancing and Auto Scaling for multiple VM instances</li>
+    <li>Attach storage & network storage to your VMs</li>
+    <li>Manage n/w connectivity and configuration of VMs</li>
+    <li>SSH to connect to the VM instances</li>
+  </ol>
+
+
+  <h3>Google CLoud CLI</h3>
+
+  <div>
+    <p>The general syntax is as follows</p>
+    <code>gcloud group subgroup command options</code>
+    <p>Group: config, compute</p>
+    <p>Subgroup: </p>
+    <p>
+      <pre>
+        gcloud config list  // This command lists the current activated configuration 
+        gcloud config list project // This list the project name mentioned in the active configuration
+        gcloud config configurations list // this lists all configurations 
+        gcloud config configurations activate [configuration-name] //This activates the configuration that has the provided name
+        gcloud config configurations describe [configuration-name] //This provides details of the configiration that has the provided Name
+
+        
+        gcloud compute instances list //Lists all the VM instances
+        gcloud compute instances create //Creates a VM with default params, region and zone will be picked from the configuration
+        gcloud compute instances create [NAME] //Creates a VM instance with providd name and other default params
+        gcloud compute instances describe [NAME] //Prints details of the VM with given name
+      </pre>
+    </p>
+  </div>
+  
+  <br/>
+
   <h3>Setting UP</h3>
   <ol>
     <li>Create GCP account - google account</li>

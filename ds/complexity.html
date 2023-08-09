@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Complexity</title>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <h1>Complexity</h1>
+    <hr size="3" noshade>
+
+    <h2>Time Complexity:</h2>
+    <ol>
+      <li>Measure of time required to execute a code.</li>
+      <li>Represented using Big O notation : O(n<sup>deg)</sup>. Order of deg</li> 
+      <li>If the code is represented as a function of f(n), then the complexity is the degree of the polynomial f(n)</li>
+    </ol>
+
+    <h3>Examples</h3>
+
+    <h4>Case 1: Complexity for code with a simple function with no loop is O(1) or const</h4>
+    <p>Code which does some operation that has no repetition. A simple addition function.</p>
+    <pre>
+      <code>
+        
+      int sum(int a, int b){
+
+          int sum = a+b; //Executes 1 time
+          
+          return sum; //Executes 1 time
+          
+      }
+
+      //The number of executions for above function can be represented as f(n) = 2
+      //So the complexity is degree of f(n) which is 0
+      //Hence the complexity is O(n<sup>0</sup>) which is same as O(1)
+        
+      </code>
+    </pre>
+
+    <h4>Case 2: Complexity for code with a single depth loop is O(n) </h4>
+    <p>A function which iterates through a single dimension array and does some operation.<br/>
+      Complexity is for worst case scenario is when it goes all the way to the end of the array.<br/>
+    
+    If there are multiple loops in a function that are <em>NOT NESTED</em>, the complexity will be still the same.</p>
+    <pre>
+      <code>
+        
+      int sum(int array[]){
+
+          int sum = 0; //Executes 1 time
+          int n = array.size(); //Execute 1 time
+          for(int i = 0; i &lt; n; i++){
+              sum += array[i]; //Executes 'n' times
+          }
+          return sum; //Executes 1 time
+
+      }
+
+      //The number of executions for above function can be represented as f(n) = n+3
+      //So the complexity is degree of f(n) which is 1
+      //Hence the complexity is O(n<sup>1</sup>) which is same as O(n)
+        
+      </code>
+    </pre>
+
+    <h4>Case 3: Complexity for code with a nested depth loop is O(n<sup>num of nesting</sup>) </h4>
+    <p>A function which iterates through a matrix and does some operation.<br/>Or iterates through an array and for each item, iterates through every item in that array </p>
+    <pre>
+      <code>
+        
+      int sum(int array[]){
+
+          int sum = 0; //Executes 1 time
+          int n = array.size(); //Execute 1 time
+          for(int i = 0; i &lt; n; i++){ //Executes 'n' times
+             
+            for(int j = 0; j&lt;n; j++){ //Executes 'n*n' times
+               //Does some operation
+            }
+          }
+          return sum; //Executes 1 time
+
+      }
+
+      //The number of executions for above function can be represented as f(n) = n<sup>2</sup>+n+3
+      //So the complexity is degree of f(n) which is 2
+      //Hence the complexity is O(n<sup>2</sup>)
+        
+      </code>
+    </pre>
+  </body>
+</html>
