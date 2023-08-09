@@ -22,7 +22,7 @@ h3{
   border-radius: 50%
 }
 
-code {
+pre code {
   display: block;
   border: 1px solid #999;
   font-family: Consolas,"courier new";
